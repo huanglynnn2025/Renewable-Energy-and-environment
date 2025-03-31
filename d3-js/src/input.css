@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+#tooltip {
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 8px;
+  font-size: 12px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px); /* Initial position for the animation */
+}
+
+.scatter-plot_dot {
+  transition: all 0.3s;
+}
